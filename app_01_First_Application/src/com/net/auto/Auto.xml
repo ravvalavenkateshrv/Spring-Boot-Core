@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+   <bean id="student" class="com.net.auto.Student">
+   <property name="id" value="2222"></property>
+   <property name="name" value="venkat"></property>
+   
+   </bean>
+   
+   
+   <bean id="address" class="com.net.auto.Address">
+   <property name="number" value="345"></property>
+   <property name="place" value="tpt"></property>
+   </bean>
+</beans>

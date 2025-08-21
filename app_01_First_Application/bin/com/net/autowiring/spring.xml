@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <bean id="product2" class="com.net.autowiring.Product" >
+  <property name="id" value="34554"></property>
+  <property name="name" value="MObiles"></property>
+  </bean>
+  
+  
+  <bean id="cart" class="com.net.autowiring.Cart" autowire="byName">
+   <property name="id" value="1111"></property>
+  
+  </bean>
+</beans>

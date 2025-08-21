@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="student" class="com.net.first.Student">
+    <property name="id" value="222"></property>
+    <property name="name" value="venkat"></property>
+    <property name="nameList">
+    
+     <list>
+     <value>venkat</value>
+     <value>mohan</value>
+     </list>
+   
+    
+    </property>
+    
+    <property name="collegeList">
+     <set>
+       <value>jspider</value>
+       <value>mohanbabu</value>
+     </set>
+    
+    </property>
+    
+    <property name="hostelList">
+    <map>
+    <entry key="1" value="venkat"></entry>
+    <entry key="2" value="leela"></entry>
+    
+    </map>
+    </property>
+    <property name="address" ref="address"></property>
+    </bean>
+    
+    
+    <bean id="address" class="com.net.first.Address">
+     <property name="id" value="333"></property>
+     <property name="street" value="venkat"></property>
+    </bean>
+</beans>

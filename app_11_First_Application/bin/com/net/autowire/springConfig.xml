@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <bean id="productsldl" class="com.net.autowire.Product">
+  <property name="id" value="1"></property>
+  <property name="name" value="Rice"></property>
+  </bean>
+  
+  
+  
+  <bean id="cart" class="com.net.autowire.Cart" autowire="constructor">
+    <property name="id" value="222"></property>
+  </bean>
+
+</beans>
